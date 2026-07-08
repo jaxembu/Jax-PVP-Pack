@@ -45,7 +45,6 @@ jax-pvp-pack/
 ├── ui/
 │   ├── hud_armor_durability.json     # Armor/durability HUD config
 │   ├── hud_cps_counter.json          # CPS counter HUD config
-│   ├── custom_hud.json               # Main HUD display
 │   ├── combined_hud.json             # Combined CPS/Armor/Durability HUD
 │   └── screens/
 │       ├── armor_durability_hud.json # HUD screen layout

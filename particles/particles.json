@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "particle_effects": {
+    "minecraft:critical_hit": {
+      "description": {
+        "identifier": "minecraft:critical_hit",
+        "basic_render_group": "alpha"
+      },
+      "events": {
+        "minecraft:creation_event": {
+          "sequence": []
+        }
+      }
+    },
+    "minecraft:damage_indicator": {
+      "description": {
+        "identifier": "minecraft:damage_indicator",
+        "basic_render_group": "alpha"
+      },
+      "events": {
+        "minecraft:creation_event": {
+          "sequence": []
+        }
+      }
+    },
+    "minecraft:splash_potion": {
+      "description": {
+        "identifier": "minecraft:splash_potion",
+        "basic_render_group": "alpha"
+      },
+      "events": {
+        "minecraft:creation_event": {
+          "sequence": []
+        }
+      }
+    }
+  }
+}

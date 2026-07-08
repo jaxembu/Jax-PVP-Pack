@@ -1,0 +1,89 @@
+{
+  "format_version": "1.16.0",
+  "namespace": "ui",
+  "cps_hud_screen": {
+    "layer": "hud_layer",
+    "controls": [
+      {
+        "cps_display_panel": {
+          "type": "panel",
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-120, -55],
+          "size": [110, 12],
+          "background": true,
+          "background_color": [0.1, 0.1, 0.1, 0.6],
+          "controls": [
+            {
+              "cps_label": {
+                "type": "label",
+                "text": "CPS: ",
+                "color": [0.2, 1, 0.2, 1],
+                "font_size": "small",
+                "offset": [5, 1]
+              }
+            },
+            {
+              "cps_value": {
+                "type": "label",
+                "text": "0.0",
+                "color": [1, 1, 1, 1],
+                "font_size": "small",
+                "offset": [60, 1]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "armor_and_durability_hud": {
+          "type": "panel",
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-120, -30],
+          "size": [110, 25],
+          "background": true,
+          "background_color": [0.1, 0.1, 0.1, 0.6],
+          "controls": [
+            {
+              "armor_label": {
+                "type": "label",
+                "text": "Armor: ",
+                "color": [1, 1, 0.5, 1],
+                "font_size": "small",
+                "offset": [0, 0]
+              }
+            },
+            {
+              "armor_value": {
+                "type": "label",
+                "text": "12",
+                "color": [1, 1, 1, 1],
+                "font_size": "small",
+                "offset": [60, 0]
+              }
+            },
+            {
+              "durability_label": {
+                "type": "label",
+                "text": "Durability: ",
+                "color": [1, 0.5, 0.5, 1],
+                "font_size": "small",
+                "offset": [0, 8]
+              }
+            },
+            {
+              "tool_durability_value": {
+                "type": "label",
+                "text": "95%",
+                "color": [1, 1, 1, 1],
+                "font_size": "small",
+                "offset": [60, 8]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "ui": {
+    "hud": {
+      "cps_counter": {
+        "enabled": true,
+        "position": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-120, -55]
+        },
+        "size": [110, 12]
+      }
+    }
+  }
+}

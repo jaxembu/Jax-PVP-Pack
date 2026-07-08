@@ -1,0 +1,10 @@
+{
+  "resource_pack_uuid": "12345678-1234-1234-1234-123456789abc",
+  "texture_data": {
+    "totem_of_undying": {
+      "textures": [
+        "textures/items/totem_of_undying"
+      ]
+    }
+  }
+}

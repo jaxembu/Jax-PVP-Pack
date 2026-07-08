@@ -1,0 +1,27 @@
+{
+  "namespace": "hud",
+  "screen_content": {
+    "cps_display": {
+      "type": "panel",
+      "size": [110, 12],
+      "controls": [
+        {
+          "cps_label@common.label": {
+            "offset": [5, 0],
+            "text": "CPS: ",
+            "color": [0.2, 1, 0.2, 1],
+            "font_size": "default"
+          }
+        },
+        {
+          "cps_value@common.label": {
+            "offset": [55, 0],
+            "text": "@ui.cps_value",
+            "color": [1, 1, 1, 1],
+            "font_size": "default"
+          }
+        }
+      ]
+    }
+  }
+}

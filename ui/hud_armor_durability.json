@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "ui": {
+    "hud": {
+      "armor_bar": {
+        "enabled": true,
+        "position": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [-90, 10]
+        },
+        "size": [80, 9]
+      },
+      "durability_bar": {
+        "enabled": true,
+        "show_armor": true,
+        "show_tools": true,
+        "position": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-90, -20]
+        }
+      }
+    }
+  }
+}

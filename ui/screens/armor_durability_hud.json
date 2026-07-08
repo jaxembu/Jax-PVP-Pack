@@ -1,0 +1,27 @@
+{
+  "namespace": "hud",
+  "screen_content": {
+    "armor_display": {
+      "type": "panel",
+      "size": [80, 18],
+      "controls": [
+        {
+          "armor_icon@common.gui_icon": {
+            "size": [18, 18],
+            "offset": [0, 0],
+            "texture": "textures/ui/armor_icons",
+            "layer": 2
+          }
+        },
+        {
+          "armor_durability@common.label": {
+            "offset": [22, 4],
+            "text": "Armor",
+            "color": [1, 1, 1, 1],
+            "font_size": "default"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "namespace": "armor_durability",
+  "armor_display_item": {
+    "description": {
+      "identifier": "minecraft:armor_display",
+      "category": "equipment"
+    }
+  },
+  "durability_display_tool": {
+    "description": {
+      "identifier": "minecraft:durability_display",
+      "category": "tool"
+    }
+  }
+}

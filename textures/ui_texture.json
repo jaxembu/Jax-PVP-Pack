@@ -1,0 +1,30 @@
+{
+  "resource_pack_uuid": "12345678-1234-1234-1234-123456789abc",
+  "texture_data": {
+    "cps_icon": {
+      "textures": [
+        "textures/ui/cps_icon"
+      ]
+    },
+    "armor_icons": {
+      "textures": [
+        "textures/ui/armor_icons"
+      ]
+    },
+    "tool_icons": {
+      "textures": [
+        "textures/ui/tool_icons"
+      ]
+    },
+    "durability_bar_bg": {
+      "textures": [
+        "textures/ui/durability_bar_background"
+      ]
+    },
+    "durability_bar_fill": {
+      "textures": [
+        "textures/ui/durability_bar_fill"
+      ]
+    }
+  }
+}
