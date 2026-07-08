@@ -1,136 +1,178 @@
-# Jax PvP Pack
+# 📋 To-Do List Application
 
-**Version:** 1.2.0  
-**Target:** Minecraft Bedrock Edition 1.21+  
-**Platform:** Windows 10/11
+A beautiful, feature-rich to-do list application with local storage functionality.
 
-## Features
+## ✨ Features
 
-✅ **CPS Counter** - Track your clicks per second in real-time  
-✅ **Armor HUD Display** - See your armor durability at a glance  
-✅ **Tool Durability Display** - Track your tool/weapon durability in real-time  
-✅ **Disabled End Crystal Explosion Particles** - Removes distracting visual clutter  
-✅ **Reduced Particle Effects** - Optimized for maximum FPS during PvP  
-✅ **Small Totems** - Totem of undying scaled down for cleaner visuals  
-✅ **Lightweight Design** - Minimal file size for fast loading  
-✅ **Performance Friendly** - Optimized for competitive gameplay  
-✅ **Clean PvP Visual Design** - Minimal visual distractions
+- ✅ **Add Tasks** - Quickly add new tasks to your list
+- ✅ **Mark Complete** - Check off completed tasks
+- ✅ **Edit Tasks** - Modify task text at any time
+- ✅ **Delete Tasks** - Remove unwanted tasks
+- ✅ **Filter Tasks** - View All, Active, or Completed tasks
+- ✅ **Local Storage** - All data persists in your browser
+- ✅ **Statistics** - Track total, completed, and remaining tasks
+- ✅ **Responsive Design** - Works on desktop and mobile
+- ✅ **Beautiful UI** - Modern gradient design with smooth animations
+- ✅ **Keyboard Support** - Press Enter to add tasks
 
-## New in v1.2.0
+## 🚀 Installation
 
-- 🆕 **CPS Counter** - Real-time clicks per second tracking
-- 🆕 **Combined HUD** - CPS, Armor, and Durability all in one place
-- 🆕 **CPS Icon** - Clean visual indicator for click counter
+### Quick Start
 
-## Installation
+1. **Download files**
+   - `index.html` - Main HTML structure
+   - `styles.css` - Styling and animations
+   - `app.js` - Application logic
 
-1. Download the `.mcpack` file
-2. Open it with Minecraft Bedrock Edition
-3. The resource pack will be automatically imported
-4. Enable it in your world settings under Resource Packs
-5. The CPS Counter, Armor & Durability HUD will appear in-game automatically
+2. **Open in browser**
+   ```bash
+   # Just double-click index.html
+   ```
+   Or drag `index.html` to your browser
 
-## Contents
+3. **Start using**
+   - Type a task in the input field
+   - Click "Add" or press Enter
+   - Check off tasks as you complete them
+   - Use filters to view different task sets
 
+## 📖 How to Use
+
+### Adding Tasks
+1. Type your task in the input field
+2. Click "➕ Add" or press **Enter**
+3. Task will appear in the list
+
+### Managing Tasks
+- **Complete**: Click the checkbox next to a task
+- **Edit**: Click the "✏️ Edit" button to modify task text
+- **Delete**: Click the "🗑️ Delete" button to remove a task
+
+### Filtering
+- **All**: View all tasks
+- **Active**: View only incomplete tasks
+- **✓ Done**: View only completed tasks
+
+### Clearing Tasks
+- **🗑️ Clear Done**: Removes all completed tasks
+- **🗑️ Clear All**: Removes all tasks (with confirmation)
+
+### Statistics
+The app displays real-time statistics:
+- **📊 Total**: Total number of tasks
+- **✅ Completed**: Number of completed tasks
+- **⏳ Remaining**: Number of active tasks
+
+## 💾 Local Storage
+
+All your tasks are automatically saved to your browser's local storage:
+- Tasks persist after closing the browser
+- Each browser/device has its own storage
+- Data is stored locally on your device (never sent to servers)
+
+### Accessing Stored Data
+
+In browser console (Press **F12**):
+```javascript
+// View all tasks
+JSON.parse(localStorage.getItem('todos'))
+
+// Clear all tasks
+localStorage.removeItem('todos')
+
+// Export tasks to JSON
+const tasks = JSON.parse(localStorage.getItem('todos'));
+copy(JSON.stringify(tasks, null, 2));
 ```
-jax-pvp-pack/
-├── manifest.json                      # Pack metadata
-├── pack_icon.png                      # Pack icon
-├── textures/
-│   ├── item_texture.json             # Item texture definitions
-│   ├── ui_texture.json               # UI texture definitions
-│   ├── armor_durability_items.json   # Armor/durability definitions
-│   └── items/
-│       └── totem_of_undying.png      # Scaled down totem
-├── ui/
-│   ├── hud_armor_durability.json     # Armor/durability HUD config
-│   ├── hud_cps_counter.json          # CPS counter HUD config
-│   ├── custom_hud.json               # Main HUD display
-│   ├── combined_hud.json             # Combined CPS/Armor/Durability HUD
-│   └── screens/
-│       ├── armor_durability_hud.json # HUD screen layout
-│       └── cps_counter_hud.json      # CPS counter screen
-├── particles/
-│   ├── end_crystal_explode.json      # Disabled crystal particles
-│   └── particles.json                # Optimized particles
-└── README.md
+
+## 🌐 Browser Support
+
+✅ Chrome (latest)
+✅ Firefox (latest)
+✅ Safari (latest)
+✅ Edge (latest)
+✅ Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 🛠️ Technology Stack
+
+- **HTML5** - Structure and semantic markup
+- **CSS3** - Modern styling with gradients and animations
+- **Vanilla JavaScript** - No dependencies, pure JS logic
+- **LocalStorage API** - For data persistence
+
+## 📦 File Size
+
+- `index.html` - ~3 KB
+- `styles.css` - ~7 KB
+- `app.js` - ~5 KB
+- **Total** - ~15 KB (very lightweight!)
+
+## ⌨️ Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| **Enter** | Add new task (when input is focused) |
+| **Tab** | Navigate through elements |
+
+## 💡 Tips & Tricks
+
+1. **Backup your tasks** - Use browser console to export
+2. **Mobile friendly** - Use on phone with responsive design
+3. **Multiple lists** - Use different browsers for separate task lists
+4. **Privacy** - All data stays on your device
+
+## 📈 Data Format
+
+Tasks are stored in the following JSON format:
+```json
+{
+  "id": 1234567890,
+  "text": "Task description",
+  "completed": false,
+  "createdAt": "7/8/2026, 7:30:45 PM"
+}
 ```
 
-## HUD Features
+## 🔧 Troubleshooting
 
-### CPS Counter
-- **Real-time CPS tracking** - Shows clicks per second
-- **Green color indicator** - Stands out for quick reference
-- **Lightweight calculation** - No FPS impact
-- **Top display** - Located above armor display
+### Tasks disappearing?
+- Check browser privacy settings
+- Ensure local storage is not disabled
+- Try incognito/private window to test
 
-### Armor Display
-- Shows current armor durability status
-- Color-coded indicators (yellow for good, red for damaged)
-- Located in bottom-right corner
+### Can't add tasks?
+- Ensure input field is not empty
+- Check browser console for errors (F12)
+- Try refreshing the page
 
-### Tool Durability Display
-- Real-time durability tracking for equipped items
-- Shows percentage remaining
-- Updates automatically as tools take damage
+### Performance issues?
+- The app handles thousands of tasks smoothly
+- If slow, try clearing completed tasks
+- Check browser memory usage
 
-## HUD Layout (Bottom-Right Corner)
+## 🎯 Future Enhancements
 
-```
-┌────────────────┐
-│  CPS: 8.5      │  ← Clicks per second
-├────────────────┤
-│  Armor: 12     │  ← Armor durability
-│  Durability: 95%│  ← Tool durability
-└────────────────┘
-```
+Possible features to add:
+- Task priority levels
+- Due dates and reminders
+- Task categories/tags
+- Dark mode toggle
+- Export/import tasks
+- Recurring tasks
+- Drag and drop reordering
 
-### Optimization Details
+## 📄 License
 
-#### Particles Disabled
-- ❌ End crystal explosions
-- ❌ Excessive damage indicators
-- ❌ Unnecessary critical hit effects
-- ❌ Splash potion particles
+Free to use and modify!
 
-#### Item Scaling
-- Totem of Undying: **50% smaller** for cleaner HUD visibility
+## 🆘 Support
 
-## Compatibility
+For issues:
+1. Check the browser console (F12)
+2. Verify localStorage is enabled
+3. Try clearing browser cache
+4. Test in a different browser
 
-- ✅ Minecraft Bedrock Edition 1.21+
-- ✅ Windows 10/11
-- ✅ Xbox
-- ✅ Mobile (Nintendo Switch, PS4, PS5)
+---
 
-## Performance Impact
-
-- **FPS Boost:** 10-20% improvement by removing particles
-- **Load Time:** Fast (minimal file size ~100KB)
-- **Visibility:** Enhanced with reduced visual clutter
-- **HUD Overlay:** Lightweight CPS tracking with zero FPS impact
-
-## Customization
-
-The HUD can be customized by editing:
-- `ui/hud_cps_counter.json` - CPS display settings
-- `ui/hud_armor_durability.json` - Armor/durability position and display
-- `ui/combined_hud.json` - Colors, fonts, and overall layout
-
-## Tips for PvP
-
-- **Monitor CPS** - Aim for consistent high CPS during combat
-- **Watch Armor** - Know when to retreat for repairs
-- **Track Durability** - Avoid breaking your weapon mid-fight
-- **Focused HUD** - Clean interface helps you concentrate on enemies
-- **Particle Reduction** - Better visibility for spotting opponents
-
-## How to Convert to .mcpack
-
-The `.mcpack` file is simply a ZIP archive with a different extension:
-
-1. Compress all files in this folder to a ZIP
-2. Rename the `.zip` to `.mcpack`
-3. Open with Minecraft Bedrock Edition
-
-Enjoy competitive PvP with real-time CPS tracking, armor monitoring, and durability tracking! 🎮⚔️
+Enjoy organizing your tasks! 🎯
